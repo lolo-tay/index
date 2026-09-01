@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Privacy Policy — Drive Link Shortener &amp; QR</title>
+<style>
+  :root{
+    --bg: #F1E6D3;
+    --surface: #FFFDF8;
+    --border: #D9C6A3;
+    --text: #2B2114;
+    --text-dim: #6B5D42;
+    --accent: #A8651E;
+    --sans: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+  }
+  body{
+    margin:0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--sans);
+    line-height: 1.6;
+  }
+  .wrap{
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 48px 24px 80px;
+  }
+  h1{
+    font-size: 26px;
+    margin: 0 0 6px;
+  }
+  .meta{
+    color: var(--text-dim);
+    font-size: 14px;
+    margin-bottom: 32px;
+  }
+  h2{
+    font-size: 17px;
+    margin: 32px 0 10px;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 6px;
+  }
+  p, li{ font-size: 15px; color: var(--text); }
+  ul{ padding-left: 20px; }
+  .card{
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 18px 20px;
+    margin: 16px 0;
+  }
+  a{ color: var(--accent); }
+  .fill-in{
+    background: #FCEFD9;
+    border: 1px dashed var(--accent);
+    padding: 1px 6px;
+    border-radius: 4px;
+    font-family: ui-monospace, Menlo, Consolas, monospace;
+    font-size: 13px;
+  }
+  footer{
+    margin-top: 40px;
+    font-size: 13px;
+    color: var(--text-dim);
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Privacy Policy</h1>
+  <p class="meta">Drive Link Shortener &amp; QR — Chrome Extension &nbsp;·&nbsp; Last updated: <span class="fill-in">August 25, 2026</span></p>
+
+  <div class="card">
+    <p style="margin:0;"><strong>In short:</strong> this extension does not collect, store, or sell any personal data. It only reads the URL of the page you're currently on when you click its icon, sends that URL to TinyURL to shorten it, and generates the QR code entirely on your own device.</p>
+  </div>
+
+  <h2>What information is accessed</h2>
+  <ul>
+    <li><strong>Current tab URL.</strong> When you click the extension icon and use "This tab," the extension reads the URL of the active tab. This happens only when you actively trigger it — the extension does not run in the background or monitor your browsing.</li>
+    <li><strong>Manually entered links.</strong> If you paste a link into the extension instead, that text is used the same way.</li>
+  </ul>
+
+  <h2>What information is shared, and with whom</h2>
+  <ul>
+    <li>The URL you choose to shorten is sent to <a href="https://tinyurl.com" target="_blank" rel="noopener">TinyURL</a> (tinyurl.com), a third-party link-shortening service, in order to generate a shortened link. See <a href="https://tinyurl.com/app/privacy" target="_blank" rel="noopener">TinyURL's own privacy policy</a> for how they handle that request.</li>
+    <li>If you optionally add your own TinyURL API key in Settings, that key is sent to TinyURL's API (api.tinyurl.com) solely to authenticate the shortening request.</li>
+    <li>No other third party receives any data from this extension. There is no analytics, advertising, or tracking SDK included.</li>
+  </ul>
+
+  <h2>What stays on your device</h2>
+  <ul>
+    <li><strong>QR code generation happens entirely locally</strong> in your browser using an offline JavaScript library. No image, file content, or QR data is ever transmitted anywhere.</li>
+    <li><strong>Your TinyURL API key (if you add one)</strong> is stored only in Chrome's local extension storage on your own device (<code>chrome.storage.local</code>). It is never sent to us, because we do not operate any server — this extension has no backend.</li>
+  </ul>
+
+  <h2>What we don't do</h2>
+  <ul>
+    <li>We do not collect browsing history, page content, or personal information.</li>
+    <li>We do not use cookies, analytics, or advertising trackers.</li>
+    <li>We do not sell or share data with advertisers or data brokers.</li>
+    <li>We do not access your Google Drive account, files, or permissions — the extension only ever sees the URL already visible in your browser's address bar.</li>
+  </ul>
+
+  <h2>Data retention and deletion</h2>
+  <p>Because no data is stored on any server, there is nothing for us to retain or delete on our end. To remove the one piece of data stored locally (your optional API key), clear the field in Settings and click Save, or simply uninstall the extension — Chrome deletes all locally stored extension data automatically on uninstall.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If this policy changes, the "Last updated" date at the top of this page will be revised accordingly.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy can be sent to <span class="fill-in">tay.publish@gmail.com</span>.</p>
+
+  <footer>This page is required by the Chrome Web Store's developer program policies for extensions that request host permissions or transmit data to a remote service.</footer>
+</div>
+</body>
+</html>
